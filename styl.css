@@ -26,7 +26,19 @@ body {
             letter-spacing: 0.5px;
         }
 
-icon-box img {
+.btn-reset {
+            margin-left: auto;
+            background-color: #31ACDD;
+            color: white;
+            border: none;
+            padding: 10px 20px; 
+            border-radius: 50px; 
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        icon-box img {
             width: 100%;
             height: 100%;
             object-fit: cover; 
@@ -100,5 +112,21 @@ icon-box img {
             width: auto;  
             display: block; 
         }
-    
+
+.total-container {
+            background-color: #31ACDD; 
+            color: white;
+            border-radius: 30px; 
+            padding: 30px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800; 
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
