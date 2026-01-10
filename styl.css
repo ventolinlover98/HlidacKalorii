@@ -23,10 +23,21 @@ body {
             font-family: "Montserrat", sans-serif;
             font-weight: 800; 
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
 .btn-reset {
+            background-color: #31ACDD;
+            color: white;
+            border: none;
+            padding: 10px 20px; 
+            border-radius: 50px; 
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+.btn-goal {
             margin-left: auto;
             background-color: #31ACDD;
             color: white;
@@ -36,9 +47,10 @@ body {
             font-family: "Montserrat", sans-serif;
             font-weight: 700;
             font-size: 14px;
+            cursor: pointer;
         }
 
-        icon-box img {
+.icon-box img {
             width: 100%;
             height: 100%;
             object-fit: cover; 
@@ -68,7 +80,6 @@ body {
             color: #31ACDD;
             font-size: 14px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
             font-family: "Montserrat", sans-serif;
         }
 
@@ -82,7 +93,6 @@ body {
             font-size: 16px;
             box-sizing: border-box; 
             outline: none;
-            transition: border-color 0.3s;
             font-family: "Montserrat", sans-serif;
         }
 
@@ -104,7 +114,6 @@ body {
             display: inline-flex;
             align-items: center;
             gap: 10px; 
-            transition: background-color 0.3s, transform 0.2s;
         }
 
 .btn-add img {
@@ -127,6 +136,34 @@ body {
             font-weight: 800; 
             font-size: 20px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
+.simple-table {
+    width: 100%;
+    background-color: #eaf8fe; 
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse; 
+}
+
+.simple-table tr {
+    border-bottom: 1px solid black; 
+}
+
+.simple-table tr:last-child {
+    border-bottom: none; 
+}
+
+.simple-table td {
+    padding: 15px 20px;
+    color: black;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    vertical-align: middle; 
+    white-space: nowrap; 
+}
+
+.simple-table td:first-child {
+    width: 100%;
+}

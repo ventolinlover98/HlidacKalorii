@@ -18,50 +18,59 @@
                 <img src="obrazky/ikonka.png" alt="Logo aplikace">
             </div>
             <h1>Hlídač kalorií</h1>
-            <button type="button" class="btn-reset">Nový den</button>
+            <button type="button" id="goal-btn" class="btn-goal">Kalorický cíl</button>
+            <button type="button" id="reset-btn" class="btn-reset">Nový den</button>
+       </div>
     </header>
     <main>
         <div class="total-container">
             <span>Kalorie celkem:</span>
-            <span id="total-result">0</span>
+            <span id="total-calories">0</span>
         </div>
 
         <div class="total-container">
             <span>Jak daleko jsem od svého kalorického cíle:</span>
-            <span id="total-result">0</span>
+            <span id="calories-remaining">0</span>
         </div>
         
         <div class="container">
-            <form>
+            <form id="meal-form">
                 <div class="form-grid">
                   
                     <div class="label-text">Jídlo</div>
                     <div class="label-text">Kalorická hodnota</div>
 
-                    <input type="text" placeholder="Např. Jablko">
-                    <input type="number" placeholder="kcal">
+                    <input type="text" id="meal-name" placeholder="Např. Jablko">
+                    <input type="number" id="meal-calories" placeholder="kcal">
 
                 </div>
-                 <button type="button" class="btn-add">
+                 <button type="submit" class="btn-add">
                     Přidat <img src="obrazky/ikonka_plus.png" alt="plus">
                 </button>
             </form>
+        <table class="simple-table">
+    <tbody id="meal-list"></tbody>
+</table>  
         </div>
 
         <div class="container">
-            <form>
+            <form id="workout-form">
                 <div class="form-grid">
                     <div class="label-text">Cvik</div>
                     <div class="label-text">Spálené kalorie</div>
 
-                    <input type="text" placeholder="Např. Plavání">
-                    <input type="number" placeholder="kcal">
+                    <input type="text" id="workout-name" placeholder="Např. Plavání">
+                    <input type="number" id="workout-calories" placeholder="kcal">
                 </div>
-                <button type="button" class="btn-add">
+                <button type="submit" class="btn-add">
                     Přidat <img src="obrazky/ikonka_plus.png" alt="plus">
                 </button>
             </form>
+            <table class="simple-table">
+    <tbody id="workout-list"></tbody>
+</table>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
